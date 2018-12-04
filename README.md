@@ -1,24 +1,36 @@
-# README
+## articles table
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|Colum|Type|Options|
+|-----|----|-------|
+|title|string|null: false, index: true|
+|text|text||
+|image|string||
+|user_id|references|null: false, foreign_key: true|
 
-Things you may want to cover:
+### Association
+- has_many :comments
+- belong_to :user
 
-* Ruby version
+## comments table
 
-* System dependencies
+|Colum|Type|Options|
+|-----|----|-------|
+|text|text||
+|article_id|references|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
 
-* Configuration
+### Association
+- belong_to :user
+- belong_to :article
 
-* Database creation
+## users table
 
-* Database initialization
+|Colum|Type|Options|
+|-----|----|-------|
+|nickname|string|null: false, uniqie: true|
+|email|string|null: false, uniqie: true|
+|password|string|null: false, uniqie: true|
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- has_many :articles
+- has_many :comments
