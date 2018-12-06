@@ -3,7 +3,7 @@
 |Colum|Type|Options|
 |-----|----|-------|
 |title|string|null: false, index: true|
-|text|text||
+|text|text|null: false|
 |image|string||
 |user_id|references|null: false, foreign_key: true|
 
@@ -15,7 +15,7 @@
 
 |Colum|Type|Options|
 |-----|----|-------|
-|text|text||
+|text|text|null: false|
 |article_id|references|null: false, foreign_key: true|
 |user_id|references|null: false, foreign_key: true|
 
