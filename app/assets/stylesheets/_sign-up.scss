@@ -1,7 +1,7 @@
 .session {
   background-color: #55c500;
   &__content {
-    width: 100%;
+    width: 90%;
     padding: 72px 32px 32px;
     background-position: left top left top;
     background-size: 400px 400% 400%;
@@ -47,6 +47,7 @@
             padding-right: 10px;
           }
           &__input {
+            border-radius: 4px;
             width: 100%;
             padding: 8px;
             font-size: 0.8rem;
@@ -63,8 +64,9 @@
           }
           &__button {
             margin-right: 16px;
-            button {
+            .btn {
               display: inline-block;
+              border-radius: 4px;
               text-align: center;
               width: 120px;
               height: 40px;
