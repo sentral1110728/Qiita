@@ -1,0 +1,35 @@
+.session
+  .session__content
+    .session__content__inner
+      .session__content__inner__left
+        %h1.session__content__inner__left__title
+          Hello hackers !
+        %p.session__content__inner__left__text
+          Qiitaは、エンジニアリングに関する知識を記録・共有するためのサービスです。コードを書いていて気づいたことや、自分がハマったあの仕様について、他のエンジニアと知見を共有しましょう。
+      .session__content__inner__right
+        .signup__form
+          = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+            = devise_error_messages!
+            .signup__form__group
+              = f.label :nickname, class: 'signup__form__table'
+              %br/
+              = f.text_field :nickname, class: 'signup__form__input', autofocus: true, autocomplete: "nickname", placeholder: 'qiitan'
+            .signup__form__group
+              = f.label :email, class: 'signup__form__table'
+              %br/
+              = f.email_field :email, class: 'signup__form__input', autofocus: true, autocomplete: "email", placeholder: 'qiitan@qiita.com'
+            .signup__form__group
+              = f.label :password, class: 'signup__form__table'
+              %br/
+              = f.password_field :password, class: 'signup__form__input', autocomplete: "new-password", placeholder: '******'
+            .signup__form__group
+              = f.label :password_confirmation, class: 'signup__form__table'
+              %br/
+              = f.password_field :password_confirmation, class: 'signup__form__input', autocomplete: "new-password",placeholder: '******'
+            .signup__form__buttonarea
+              .signup__form__button
+                = f.submit "登録する", class: 'btn'
+              .signup__form__attention
+                登録には
+                %a{href: "/"} 利用規約
+                に同意する必要があります。

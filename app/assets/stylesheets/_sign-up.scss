@@ -1,0 +1,94 @@
+.session {
+  background-color: $light_green;
+  &__content {
+    width: 90%;
+    padding: 72px 32px 32px;
+    background-position: left top left top;
+    background-size: 400px 400% 400%;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      &__left {
+        width: 60%;
+        &__title {
+          margin-bottom: 24px;
+          font-size: 3rem;
+          font-weight: 700;
+          color: $white;
+        }
+        &__text {
+          width: 83%;
+          color: $white;
+          font-size: 1rem;
+          line-height: 2;
+        }
+      }
+      &__right {
+        width: 30%;
+        min-width: 305px;
+        .signup__form {
+          display: flex;
+          flex-direction: column;
+          &__group {
+            margin-bottom: 16px;
+            margin-left: -100px;
+            display: flex;
+            align-items: center;
+          }
+          &__table {
+            display: block;
+            font-size: .7rem;
+            color: $white;
+            min-width: 100px;
+            text-align: right;
+            padding-right: 10px;
+          }
+          &__input {
+            border-radius: 4px;
+            width: 100%;
+            padding: 8px;
+            font-size: 0.8rem;
+          }
+          .helper__text {
+            margin-bottom: 16px;
+            display: block;
+            color: $white;
+            font-size: .5rem;
+          }
+          &__buttonarea {
+            display: flex;
+            align-items: center;
+          }
+          &__button {
+            margin-right: 16px;
+            .btn {
+              display: inline-block;
+              border-radius: 4px;
+              text-align: center;
+              width: 120px;
+              height: 40px;
+              border: 2px solid $white;
+              padding: 8px;
+              font-size: .8rem;
+              cursor: pointer;
+              color: $white;
+              background-color: transparent;
+            }
+          }
+          &__attention {
+            color: $white;
+            font-size: .7rem;
+            a {
+              color: inherit;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
