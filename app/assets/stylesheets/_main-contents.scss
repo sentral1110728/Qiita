@@ -23,8 +23,8 @@
         position: relative;
         font-weight: 400;
         font-size: .7rem;
-        color: #fff;
-        background-color: #55c500;
+        color: $white;
+        background-color: $light_green;
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
       }
@@ -42,7 +42,7 @@
     }
     &__main {
       margin-bottom: 24px;
-      background-color: #fff;
+      background-color: $white;
       border: 1px solid transparent;
       width: 0;
       min-width: 0;
