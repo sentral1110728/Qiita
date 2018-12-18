@@ -38,6 +38,12 @@ describe User do
       expect(another_user.errors[:email]).to include("has already been taken")
     end
 
+    it "nicknameが7文字以上で登録できない" do
+      user = build(:user, nickname: "aaaaaaa")
+      user.valid?
+      expect(user.errors[:nickname][0]).to include("is too long")
+    end
+
     it "passwordが5文字未満で登録できない" do
       user = build(:user, password: "00000", password_confirmation: "00000")
       user.valid?
