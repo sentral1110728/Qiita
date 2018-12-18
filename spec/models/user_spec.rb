@@ -19,5 +19,11 @@ describe User do
       expect(user.errors[:email]).to include("can't be blank")
     end
 
+    it "emailが空値の場合登録できない" do
+      user = build(:user, password: nil)
+      user.valid?
+      expect(user.errors[:password]).to include("can't be blank")
+    end
+
   end
 end
