@@ -38,5 +38,11 @@ describe User do
       expect(another_user.errors[:email]).to include("has already been taken")
     end
 
+    it "passwordが5文字未満で登録できない" do
+      user = build(:user, password: "00000", password_confirmation: "00000")
+      user.valid?
+      expect(user.errors[:password][0]).to include("is too short")
+    end
+
   end
 end
