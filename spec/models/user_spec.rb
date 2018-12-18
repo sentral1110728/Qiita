@@ -31,6 +31,13 @@ describe User do
       expect(user.errors[:password_confirmation]).to include("doesn't match Password")
     end
 
+    it "重複したnicknameが存在する場合登録できない" do
+      user = create(:user)
+      another_user = build(:user)
+      another_user.valid?
+      expect(another_user.errors[:nickname]).to include("has already been taken")
+    end
+
     it "重複したemailが存在する場合登録できない" do
       user = create(:user)
       another_user = build(:user)
