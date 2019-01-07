@@ -17,7 +17,8 @@
         %input.header__contents__left__search__input{placeholder: "キーワードを入力"}/
     .header__left__search__button
   .header__right
-    %a.header__right__signup{href: "/"}
-      ユーザー登録
-    %a.header__right__login{href: "/"}
-      ログイン
+    - unless user_signed_in?
+      %a.header__right__signup{href: "/"}
+        ユーザー登録
+      %a.header__right__login{href: "/"}
+        ログイン
