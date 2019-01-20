@@ -3,3 +3,14 @@
     .row
       .sessions__title
         %h2 Qiitaにログイン
+      .sessions__layout__form
+        = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          .form__group
+            = f.email_field :email, autofocus: true, placeholder: 'メールアドレス', autocomplete: "email", class: 'form__control'
+          .form__group
+            = f.password_field :password, placeholder: 'パスワード', autocomplete: "current-password",class: 'form__control'
+            .help__block
+              %a{href: '/'}
+                パスワードを忘れた場合
+          .form__group
+            = f.submit "Qiitaにログイン", class: 'btn'
