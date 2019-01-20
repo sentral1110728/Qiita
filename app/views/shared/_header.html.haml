@@ -23,6 +23,7 @@
     .header__left__search__button
   .header__right
     - if user_signed_in?
+      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'header__right__stock'
       %a.header__right__stock{href: "/"}
         %span.fa.fa-fw.fa-folder-open
         ストック一覧
