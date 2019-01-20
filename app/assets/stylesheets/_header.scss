@@ -179,6 +179,30 @@ a {
         margin-right: 16px;
         font-size: .7rem;
       }
+      .login__user {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        cursor: pointer;
+        img {
+          display: flex;
+          overflow: hidden;
+          border-radius: .2em;
+          width: 32px;
+          height: 32px;
+          max-width: 100%;
+        }
+        span {
+          color: rgba(0,0,0,.3);
+          font-size: .6rem;
+          margin-left: 8px;
+          width: 1.2em;
+          text-align: center;
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome
+        }
+      }
       &__signup {
         display: flex;
         align-items: center;
