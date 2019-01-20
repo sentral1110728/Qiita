@@ -52,11 +52,32 @@ a {
             font: normal normal normal 14px/1 FontAwesome
           }
         }
+        &__home {
+          position: relative;
+          padding: 16px 0;
+          cursor: pointer;
+          margin-left: 24px;
+          margin-top: 4px;
+          line-height: 1;
+          font-size: .8rem;
+          display: flex;
+          align-items: center;
+          span {
+            color: rgba(0,0,0,.3);
+            transition: inherit;
+            margin-left: 4px;
+            width: 1.28572em;
+            text-align: center;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome
+          }
+        }
         &__community {
           position: relative;
           padding: 16px 0;
           cursor: pointer;
           margin-left: 24px;
+          margin-right: 24px;
           margin-top: 4px;
           line-height: 1;
           font-size: .8rem;
