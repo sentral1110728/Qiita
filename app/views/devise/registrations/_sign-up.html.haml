@@ -31,5 +31,5 @@
                 = f.submit "登録する", class: 'btn'
               .signup__form__attention
                 登録には
-                %a{href: "/"} 利用規約
+                = link_to "利用規約", root_path, method: :get, class: 'help__link'
                 に同意する必要があります。

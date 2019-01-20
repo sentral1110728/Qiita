@@ -1,17 +1,14 @@
-.article__list
-  .article__item
-    %a.article__item__userimage{href: "/"}
-      %img{src: "/"}/
-    .article__item__body
-      %a.article__item__body__title{href: "/"}
-        インフラエンジニアと謎のサーバー
-      .article__item__body__meta
-        by okamura
-  .article__item
-    %a.article__item__userimage{href: "/"}
-      %img{src: "/"}/
-    .article__item__body
-      %a.article__item__body__title{href: "/"}
-        インフラエンジニアと謎のサーバー
-      .article__item__body__meta
-        by okamura
+.article__item
+  = link_to root_path, class: 'article__item__userimage' do
+    = image_tag "", class: 'user__avater'
+  .article__item__body
+    = link_to "インフラエンジニアと謎のサーバー", root_path, method: :get, class: 'article__item__body__title'
+    .article__item__body__meta
+      by okamura
+.article__item
+  = link_to root_path, class: 'article__item__userimage' do
+    = image_tag "", class: 'user__avater'
+  .article__item__body
+    = link_to "インフラエンジニアと謎のサーバー", root_path, method: :get, class: 'article__item__body__title'
+    .article__item__body__meta
+      by okamura
