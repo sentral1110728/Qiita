@@ -144,6 +144,27 @@ a {
           font: normal normal normal 14px/1 FontAwesome
         }
       }
+      &__post {
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        background-color: #3f9200;
+        color: #fff;
+        border-radius: 4px;
+        font-size: .7rem;
+        padding: 0 16px 0 12px;
+        span {
+          margin-right: 8px;
+          width: .7rem;
+          text-align: center;
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome
+        }
+      }
       &__signup {
         display: flex;
         align-items: center;
