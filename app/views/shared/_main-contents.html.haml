@@ -7,12 +7,13 @@
       %a.home__contents__menu__item2{href: "/"}
         %span.fa.fa-fw.fa-flag-checkered
         マイルストーン
-      %a.home__contents__menu__item2{href: "/"}
-        %span.fa.fa-fw.fa-tags
-        タグフィード
-      %a.home__contents__menu__item2{href: "/"}
-        %span.fa.fa-fw.fa-list-ul
-        タイムライン
+      - if user_signed_in?
+        %a.home__contents__menu__item2{href: "/"}
+          %span.fa.fa-fw.fa-tags
+          タグフィード
+        %a.home__contents__menu__item2{href: "/"}
+          %span.fa.fa-fw.fa-list-ul
+          タイムライン
     .home__contents__main
       .article
         .article__list__header
