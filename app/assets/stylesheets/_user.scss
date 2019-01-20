@@ -1,0 +1,28 @@
+.sessions {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #4a4a4a;
+  background-color: #fff;
+  .container {
+    width: 740px;
+    margin-right: auto;
+    margin-left: auto;
+    .row {
+      margin-left: 8.3%;
+      width: 83%;
+      .sessions__title {
+        margin: 30px 0;
+        letter-spacing: 1px;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        h2 {
+          border-bottom: 1px solid #eee;
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+
