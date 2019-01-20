@@ -123,6 +123,27 @@ a {
       align-items: center;
       justify-content: flex-end;
       padding-right: 32px;
+      &__stock {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        color: #fff;
+        line-height: 1;
+        margin-top: 4px;
+        padding: 16px 0;
+        font-size: .7rem;
+        span {
+          margin-right: 10px;
+          width: .7rem;
+          text-align: center;
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome
+        }
+      }
       &__signup {
         display: flex;
         align-items: center;
