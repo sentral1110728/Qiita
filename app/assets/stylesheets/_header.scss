@@ -129,7 +129,7 @@ a {
         align-items: center;
         cursor: pointer;
         position: relative;
-        color: #fff;
+        color: $white;
         line-height: 1;
         margin-top: 4px;
         padding: 32px 0;
@@ -149,7 +149,7 @@ a {
         justify-content: center;
         height: 32px;
         background-color: #3f9200;
-        color: #fff;
+        color: $white;
         border-radius: 4px;
         font-size: .7rem;
         padding: 0 16px 0 12px;

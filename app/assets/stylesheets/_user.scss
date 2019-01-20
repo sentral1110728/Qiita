@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 1.4;
   color: #4a4a4a;
-  background-color: #fff;
+  background-color: $white;
   .container {
     width: 740px;
     margin-right: auto;
@@ -52,7 +52,7 @@
           .btn {
             width: 55%;
             margin-top: 20px;
-            color: #fff;
+            color: $white;
             background-color: #59bb0c;
             border-color: #4ea30a;
             display: block;
