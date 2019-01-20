@@ -124,8 +124,6 @@ a {
       justify-content: flex-end;
       padding-right: 32px;
       &__stock {
-        padding-top: 16px;
-        padding-bottom: 16px;
         margin-right: 16px;
         display: flex;
         align-items: center;
@@ -134,7 +132,7 @@ a {
         color: #fff;
         line-height: 1;
         margin-top: 4px;
-        padding: 16px 0;
+        padding: 32px 0;
         font-size: .7rem;
         span {
           margin-right: 10px;
@@ -145,8 +143,6 @@ a {
         }
       }
       &__post {
-        padding-right: 16px;
-        padding-left: 16px;
         margin-right: 16px;
         display: flex;
         align-items: center;
