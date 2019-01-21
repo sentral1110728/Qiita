@@ -1,12 +1,11 @@
 .home
   .home__contents
     .home__contents__menu
-      %a.home__contents__menu__item{href: "/"}
-        %span.fa.fa-fw.fa-line-chart
-        トレンド
-      %a.home__contents__menu__item2{href: "/"}
-        %span.fa.fa-fw.fa-flag-checkered
-        マイルストーン
+      = link_to "トレンド", root_path, method: :get, class: 'home__contents__menu__item fa fa-line-chart'
+      = link_to "マイルストーン", root_path, method: :get, class: 'home__contents__menu__item2 fa fa-flag-checkered'
+      - if user_signed_in?
+        = link_to "タグフィード", root_path, method: :get, class: 'home__contents__menu__item2 fa fa-tags'
+        = link_to "タイムライン", root_path, method: :get, class: 'home__contents__menu__item2 fa fa-list-ul'
     .home__contents__main
       .article
         .article__list__header
@@ -23,4 +22,5 @@
               週間
             %span.article__list__header__itemlist__tab__item
               月間
-        = render 'shared/article'
+        .article__list
+          = render 'shared/article'

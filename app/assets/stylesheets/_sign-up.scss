@@ -81,7 +81,7 @@
           &__attention {
             color: $white;
             font-size: .7rem;
-            a {
+            .help__link {
               color: inherit;
               text-decoration: underline;
             }
