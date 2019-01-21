@@ -35,3 +35,42 @@
     }
   }
 }
+
+.editor {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f8faf7;
+  .editor__form {
+    margin: 0;
+    .editor__content {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      bottom: 0;
+      left: 5px;
+      .editor__title {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 70px;
+        .form__control {
+          border: 1px solid #ddd;
+          box-sizing: border-box;
+          font-size: 24px;
+          height: 100%;
+          display: block;
+          width: 100%;
+          line-height: 1.42857;
+          color: #555;
+          background-color: #fff;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
