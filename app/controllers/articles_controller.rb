@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
 
   def create
     Article.create(article_params)
+    redirect_to action: :index
   end
 
   private
