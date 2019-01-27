@@ -11,7 +11,7 @@
               = f.text_field :text, class: 'editor__body__text__area', placeholder: 'プログラミング知識をMarkdown記法で書いて共有しよう'
         .editor__footer
           .editor__footer__save
-            .image__picker
-              %input.footer__image{type: "file"}
-              %i.fa.fa-picture-o
+            = f.label :image, class: 'image__picker' do
+              = fa_icon 'picture-o'
+              = f.file_field :image, class: 'footer__image'
             = button_tag "Qiitaに投稿", class: 'editor__footer__save__submit'
