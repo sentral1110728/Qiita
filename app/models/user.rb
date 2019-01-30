@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :nickname, presence: true, uniqueness: true, length: { maximum: 6 }
+  has_many :articles
 end
