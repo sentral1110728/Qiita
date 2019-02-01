@@ -8,7 +8,7 @@
             = f.text_field :title, class: 'form__control', placeholder: 'タイトル'
           .editor__body
             .editor__body__text
-              = f.text_field :text, class: 'editor__body__text__area', placeholder: 'プログラミング知識をMarkdown記法で書いて共有しよう'
+              = f.text_area :text, class: 'editor__body__text__area', placeholder: 'プログラミング知識をMarkdown記法で書いて共有しよう'
         .editor__footer
           .editor__footer__save
             = f.label :image, class: 'image__picker' do
