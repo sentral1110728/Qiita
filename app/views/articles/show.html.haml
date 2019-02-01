@@ -5,8 +5,8 @@
       .article
         .article__header
           .article__header__info
-            .article__header__info__name
-              %p 優
+            = link_to class: 'article__header__info__name' do
+              = @article.user.nickname
             .article__header__info__time
               %p 9:30
           %h1.article__header__title
