@@ -151,3 +151,27 @@
     }
   }
 }
+
+.main {
+  background-color: #f6f6f6;
+  .container {
+    padding-bottom: 40px;
+    padding-top: 24px;
+    max-width: 1000px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    .article {
+      background-color: $white;
+      padding: 32px;
+      &__header {
+        color: #333;
+        margin-bottom: 40px;
+      }
+      &__body {
+        font-size: 1.2rem;
+        color: #333;
+      }
+    }
+  }
+}
