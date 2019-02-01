@@ -12,4 +12,4 @@
           %h1.article__header__title
             = @article.title
         .article__body
-          = @article.text
+          = simple_format(@article.text)
