@@ -13,3 +13,4 @@
             = @article.title
         .article__body
           = simple_format(@article.text)
+        = image_tag @article.image.url
