@@ -5,11 +5,12 @@
       .article
         .article__header
           .article__header__info
-            .article__header__info__name
-              %p 優
+            = link_to class: 'article__header__info__name' do
+              = @article.user.nickname
             .article__header__info__time
-              %p 9:30
+              = @article.created_at
           %h1.article__header__title
-            タイトル
+            = @article.title
         .article__body
-          %p こんにちは今日はいい天気ですね！
+          = simple_format(@article.text)
+        = image_tag @article.image.url if @article.image.present?
