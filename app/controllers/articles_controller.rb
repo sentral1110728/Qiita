@@ -35,6 +35,9 @@ class ArticlesController < ApplicationController
     article = Article.find(params[:id])
     if article.user_id == current_user.id
       article.update(article_params)
+      redirect_to action: :index
+    else
+      redirect_to action: :show
     end
   end
 
