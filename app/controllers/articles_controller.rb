@@ -17,6 +17,9 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def destroy
+  end
+
   def show
     @article = Article.find(params[:id])
   end
