@@ -19,8 +19,12 @@ class ArticlesController < ApplicationController
 
   def destroy
     article = Article.find(params[:id])
-      article.destroy if article.user_id == current_user.id
+    if article.user_id == current_user.id
+      article.destroy
       redirect_to action: :index
+    else
+      redirect_to action: :show
+    end
   end
 
   def show
