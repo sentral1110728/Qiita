@@ -33,6 +33,9 @@ class ArticlesController < ApplicationController
 
   def update
     article = Article.find(params[:id])
+    if article.user_id == current_user.id
+      article.update(article_params)
+    end
   end
 
   def show
