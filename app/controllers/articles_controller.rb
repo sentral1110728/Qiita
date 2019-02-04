@@ -19,7 +19,7 @@ class ArticlesController < ApplicationController
 
   def destroy
     article = Article.find(params[:id])
-      article.destroy
+      article.destroy if article.user_id == current_user.id
   end
 
   def show
