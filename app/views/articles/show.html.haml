@@ -11,6 +11,7 @@
               = @article.created_at
             - if user_signed_in? && current_user.id == @article.user_id
               = link_to '削除', article_path, method: :delete
+              = link_to '編集', edit_article_path, method: :get
           %h1.article__header__title
             = @article.title
         .article__body
