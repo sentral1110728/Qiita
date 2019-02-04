@@ -10,7 +10,7 @@
             .article__header__info__time
               = @article.created_at
             - if user_signed_in? && current_user.id == @article.user_id
-              = link_to '削除', "/articles/#{@article.id}", method: :delete
+              = link_to '削除', article_path, method: :delete
           %h1.article__header__title
             = @article.title
         .article__body
