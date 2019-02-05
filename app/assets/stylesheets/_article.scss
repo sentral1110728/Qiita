@@ -250,6 +250,26 @@
             margin-left: 270px;
           }
         }
+        &__body {
+          padding: 5px;
+          border: 1px solid #ccc;
+          background-color: #fff;
+          textarea {
+            border-radius: 3px;
+            background-color: #fafafa;
+            padding: 10px;
+            color: #333;
+            border: 1px solid #ddd;
+            display: block;
+            width: 97%;
+            font-size: 14px;
+            line-height: 1.1;
+            min-height: 100px;
+            max-height: 500px;
+            overflow: hidden;
+            height: 100px;
+          }
+        }
       }
     }
   }
