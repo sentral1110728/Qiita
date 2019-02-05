@@ -240,6 +240,16 @@
       .comment__form {
         margin-bottom: 20px;
         margin-top: 50px;
+        &__header {
+          margin: 10px;
+          &__label {
+            display: inline-block;
+            line-height: 36px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-left: 270px;
+          }
+        }
       }
     }
   }
