@@ -223,6 +223,19 @@
             }
           }
         }
+        .comment__text {
+          border-radius: 3px;
+          position: relative;
+          background-color: #fff;
+          border: solid 1px #ccc;
+          padding: 18px 32px;
+          margin-top: 11px;
+          margin-bottom: 20px;
+          &__area {
+            font-size: 1.3rem;
+            color: #333;
+          }
+        }
       }
     }
   }
