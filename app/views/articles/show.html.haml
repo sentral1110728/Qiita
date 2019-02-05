@@ -17,3 +17,5 @@
         .article__body
           = simple_format(@article.text)
         = image_tag @article.image.url if @article.image.present?
+      .comment
+        .posted__comment

@@ -197,5 +197,15 @@
         color: #333;
       }
     }
+    .comment {
+      background-color: #fff;
+      margin: 30px;
+      padding: 10px;
+      .posted__comment {
+        border: solid #ccc 1px;
+        margin-top: 20px;
+        padding: 10px;
+      }
+    }
   }
 }
