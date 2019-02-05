@@ -205,6 +205,24 @@
         border: solid #ccc 1px;
         margin-top: 20px;
         padding: 10px;
+        .comment__header {
+          position: relative;
+          font-size: 13px;
+          line-height: 15px;
+          &__creator {
+            display: inline-block;
+            &__info {
+              display: inline-block;
+              margin-left: 10px;
+              &__username {
+                display: block;
+                margin-top: 1px;
+                font-size: 15px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
       }
     }
   }
