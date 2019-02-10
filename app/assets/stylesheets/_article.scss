@@ -255,7 +255,7 @@
         padding: 5px;
         border: 1px solid #ccc;
         background-color: #fff;
-        textarea {
+        .form__control {
           border-radius: 3px;
           background-color: #fafafa;
           padding: 10px;
@@ -270,7 +270,7 @@
           overflow: hidden;
           height: 100px;
         }
-        button {
+        .send {
           background-color: #59bb0c;
           color: #fff;
           border-color: #4ea30a;
