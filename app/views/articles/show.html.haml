@@ -18,7 +18,7 @@
           = simple_format(@article.text)
         = image_tag @article.image.url if @article.image.present?
       .comment
-        = render 'articles/comment'
+        = render @comment
       .comment__form
         .comment__form__header
           .comment__form__header__label
