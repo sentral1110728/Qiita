@@ -221,72 +221,72 @@
                 font-weight: 700;
               }
             }
-          }
-        }
-        .comment__text {
-          border-radius: 3px;
-          position: relative;
-          background-color: #fff;
-          border: solid 1px #ccc;
-          padding: 18px 32px;
-          margin-top: 11px;
-          margin-bottom: 20px;
-          &__area {
-            font-size: 1.3rem;
-            color: #333;
+            .comment__text {
+              border-radius: 3px;
+              position: relative;
+              background-color: #fff;
+              border: solid 1px #ccc;
+              padding: 18px 32px;
+              margin-top: 11px;
+              margin-bottom: 20px;
+              &__area {
+                font-size: 1.3rem;
+                color: #333;
+              }
+            }
           }
         }
       }
-      .comment__form {
-        margin-bottom: 20px;
-        margin-top: 50px;
-        &__header {
-          margin: 10px;
-          &__label {
-            display: inline-block;
-            line-height: 36px;
-            font-size: 15px;
-            font-weight: 700;
-            margin-left: 270px;
-          }
+    }
+    .comment__form {
+      margin-bottom: 20px;
+      margin-top: 50px;
+      &__header {
+        margin: 10px;
+        &__label {
+          display: inline-block;
+          line-height: 36px;
+          font-size: 15px;
+          font-weight: 700;
+          margin-left: 270px;
         }
-        &__body {
-          padding: 5px;
-          border: 1px solid #ccc;
-          background-color: #fff;
-          textarea {
-            border-radius: 3px;
-            background-color: #fafafa;
-            padding: 10px;
-            color: #333;
-            border: 1px solid #ddd;
-            display: block;
-            width: 97%;
-            font-size: 14px;
-            line-height: 1.1;
-            min-height: 100px;
-            max-height: 500px;
-            overflow: hidden;
-            height: 100px;
-          }
-          button {
-            background-color: #59bb0c;
-            color: #fff;
-            border-color: #4ea30a;
-            line-height: 1.5;
-            border-radius: 3px;
-            min-width: 70px;
-            font-size: 14px;
-            padding: 6px 10px;
-            margin-right: 5px;
-            display: inline-block;
-            margin-bottom: 0;
-            font-weight: 400;
-            text-align: center;
-            vertical-align: middle;
-            cursor: pointer;
-            border: 1px solid transparent;
-          }
+      }
+      &__body {
+        padding: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        .form__control {
+          border-radius: 3px;
+          background-color: #fafafa;
+          padding: 10px;
+          color: #333;
+          border: 1px solid #ddd;
+          display: block;
+          width: 97%;
+          font-size: 14px;
+          line-height: 1.1;
+          min-height: 100px;
+          max-height: 500px;
+          overflow: hidden;
+          height: 100px;
+        }
+        .send {
+          background-color: #59bb0c;
+          color: #fff;
+          border-color: #4ea30a;
+          line-height: 1.5;
+          border-radius: 3px;
+          min-width: 70px;
+          font-size: 14px;
+          padding: 6px 10px;
+          margin-right: 5px;
+          display: inline-block;
+          margin-bottom: 0;
+          font-weight: 400;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          border: 1px solid transparent;
         }
       }
     }

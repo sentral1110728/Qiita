@@ -43,11 +43,12 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @comment = Comment.new
+    @comments = @article.comments.includes(:user)
   end
 
   private
   def article_params
     params.require(:article).permit(:title, :text, :image).merge(user_id: current_user.id)
   end
-
 end
