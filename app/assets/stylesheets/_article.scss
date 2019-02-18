@@ -300,10 +300,47 @@
   background-color: blue;
   &__container {
     float: left;
-    width: 66.6%;
+    width: 100%;
     position: relative;
     min-height: 1px;
     padding: 0 10px;
+    background-color: #fff;
+    &__form {
+      margin-bottom: 2em;
+      .search__btn {
+        color: #fff;
+        background-color: #59bb0c;
+        border-color: #4ea30a;
+        display: block;
+        float: right;
+        margin-left: 8px;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.4;
+        border-radius: 3px;
+      }
+      .search__form {
+        display: block;
+        overflow: hidden;
+        &__area {
+          display: inline-block;
+          width: 93%;
+          height: 20px;
+          padding: 6px 12px;
+          font-size: 14px;
+          line-height: 1.4;
+          color: #555;
+          background-color: #fff;
+          border-radius: 3px;
+        }
+      }
+    }
     &__nav {
       position: relative;
       display: flex;

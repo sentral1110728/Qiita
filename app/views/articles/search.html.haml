@@ -2,6 +2,12 @@
   = render 'shared/header'
   .main__search
     .main__search__container
+      %form.main__search__container__form
+        %button.search__btn{type: "submit"}
+          %i.fa.fa-search
+          検索
+        .search__form
+          %input.search__form__area{placeholder: "タイトルで検索", type: 'text'}
       .main__search__container__nav
         %ul.navigation__tabs
           %li.active
@@ -28,4 +34,3 @@
           %h1.search__article__main__title
             = link_to "記事のタイトル"
             = link_to "suguru", root_path, class: 'article__item__body__meta'
-
