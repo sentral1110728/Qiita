@@ -292,3 +292,51 @@
     }
   }
 }
+
+.main__search {
+  width: 740px;
+  margin: 24px auto;
+  padding: 0 10px;
+  background-color: blue;
+  &__container {
+    float: left;
+    width: 66.6%;
+    position: relative;
+    min-height: 1px;
+    padding: 0 10px;
+    .search__article {
+      margin: 0;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      &__left {
+        width: 25px;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        &__userlink {
+          background-color: transparent;
+          color: #337ab7;
+          text-decoration: none;
+          &__image {
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            overflow: hidden;
+            display: inline-block;
+          }
+        }
+      }
+      &__main {
+        margin-left: 35px;
+        &__title {
+          display: inline-block;
+          margin: 0 5px 0 0;
+          line-height: 1.4;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
