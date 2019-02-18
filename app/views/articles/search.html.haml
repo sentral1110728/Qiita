@@ -2,6 +2,24 @@
   = render 'shared/header'
   .main__search
     .main__search__container
+      .main__search__container__nav
+        %ul.navigation__tabs
+          %li.active
+            = link_to "/", class: 'active__link' do
+              すべて
+              %span.article__count
+                = 0
+          %li.active
+            = link_to "/", class: 'active__stock' do
+              ストック済み
+              %span.stock__count
+                = 0
+        .sort__button
+          = link_to "/", class: 'sort__button__link' do
+            %span.btn
+              %i.fa.fa-sort-amount-desc
+              関連順
+              %i.fa.fa-caret-down
       .search__article
         .search__article__left
           = link_to root_path, class: 'search__article__left__userlink' do
