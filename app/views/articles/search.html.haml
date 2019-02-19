@@ -27,11 +27,5 @@
               %i.fa.fa-sort-amount-desc
               関連順
               %i.fa.fa-caret-down
-      .search__article
-        .search__article__left
-          = link_to root_path, class: 'search__article__left__userlink' do
-            = image_tag "", class: 'search__article__left__userlink__image'
-        .search__article__main
-          %h1.search__article__main__title
-            = link_to "記事のタイトル"
-            = link_to "suguru", root_path, class: 'article__item__body__meta'
+      = render 'search_article'
+
