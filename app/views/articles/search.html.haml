@@ -2,7 +2,7 @@
   = render 'shared/header'
   .main__search
     .main__search__container
-      = form_tag search_articles_path, method: :post do
+      = form_tag search_articles_path, method: :get do
         .main__search__container__form
           %button.search__btn{type: "submit"}
             %i.fa.fa-search
