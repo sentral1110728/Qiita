@@ -47,6 +47,10 @@ class ArticlesController < ApplicationController
     @comments = @article.comments.includes(:user)
   end
 
+  def search
+    @articles = Article.where('title LIKE(?)', "%#{params[:keyword]}%")
+  end
+
   private
   def article_params
     params.require(:article).permit(:title, :text, :image).merge(user_id: current_user.id)

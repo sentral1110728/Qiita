@@ -1,0 +1,11 @@
+- @articles.each do |article|
+  .search__article
+    .search__article__left
+      = link_to root_path, class: 'search__article__left__userlink' do
+        = image_tag "", class: 'search__article__left__userlink__image'
+    .search__article__main
+      %h1.search__article__main__title
+        = link_to "/" do
+          = article.title
+        = link_to root_path, class: 'article__item__body__meta' do
+          = article.user.nickname

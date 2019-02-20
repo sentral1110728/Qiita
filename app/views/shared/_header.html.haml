@@ -17,9 +17,10 @@
         .header__contents__left__community
           コミュニティ
           %span.fas.fa-caret-down
-      %form.header__contents__left__search
-        %span.fa.fa-search
-        %input.header__contents__left__search__input{placeholder: "キーワードを入力"}/
+      = form_tag search_articles_path, method: :get do
+        .header__contents__left__search
+          %span.fa.fa-search
+          %input.header__contents__left__search__input{placeholder: "キーワードを入力", name: "keyword"}/
     .header__left__search__button
   .header__right
     - if user_signed_in?
