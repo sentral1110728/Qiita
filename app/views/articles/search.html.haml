@@ -15,7 +15,7 @@
             = link_to "/", class: 'active__link' do
               すべて
               %span.article__count
-                = 0
+                = @articles.length
           %li.active
             = link_to "/", class: 'active__stock' do
               ストック済み

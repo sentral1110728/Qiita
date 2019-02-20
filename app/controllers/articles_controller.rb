@@ -48,7 +48,7 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    @articles = Article.where('title LIKE(?)', "%#{params[:keyword]}%").limit(10)
+    @articles = Article.where('title LIKE(?)', "%#{params[:keyword]}%")
   end
 
   private
