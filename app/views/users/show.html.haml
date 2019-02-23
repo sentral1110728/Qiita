@@ -33,7 +33,7 @@
         .user__article__activity__start
           %a.item
             %span.item__count
-              = 0
+              = @articles.length
             %span.item__label
               = "Items"
           %a.contribution
@@ -52,7 +52,7 @@
               %a.active__link
                 = "最近の記事"
                 %span.label__info
-                  = 0
+                  = @articles.length
             %li.presentation
               %a.tab__link
                 = "いいねした記事"
