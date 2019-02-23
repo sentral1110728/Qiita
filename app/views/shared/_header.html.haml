@@ -29,10 +29,9 @@
       = link_to "投稿する", new_article_path, method: :get, class: 'header__right__post fa fa-pencil-square-o'
       .notifications
         0
-      .login__user
-        = link_to user_path(current_user) do
-          = image_tag '', class: 'avater'
-          %span.fa.fa-fw.fa-caret-down
+      = link_to user_path(current_user), class: 'login__user' do
+        = image_tag '', class: 'avater'
+        %span.fa.fa-fw.fa-caret-down
     - unless user_signed_in?
       = link_to "ユーザー登録", root_path, method: :get, class: 'header__right__signup'
       = link_to "ログイン", root_path, method: :get, class: 'header__right__login'
