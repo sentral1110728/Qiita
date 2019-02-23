@@ -113,5 +113,24 @@
         margin: 0;
       }
     }
+    &__info {
+      margin-bottom: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+      color: #444;
+      &__body__text {
+        padding: 0 0 6px;
+        font-size: 13px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        line-height: 1.5;
+      }
+      &__body {
+        padding: 0 0 6px;
+        font-size: 13px;
+        font: normal normal normal 14px/1 FontAwesome
+      }
+    }
   }
 }
