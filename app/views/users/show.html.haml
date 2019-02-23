@@ -63,11 +63,14 @@
               %a.tab__link
                 = "コメント"
         .articles
-          %article.article
-            %a.article__image
-              = image_tag ""
-            .article__body
-              .article__body__username
-                %a suguru
-              .article__body__title
-                %a タイトル
+          - @articles.each do |article|
+            %article.article
+              %a.article__image
+                = image_tag ""
+              .article__body
+                .article__body__username
+                  = link_to root_path do
+                    = article.user.nickname
+                .article__body__title
+                  = link_to root_path do
+                    = article.title
