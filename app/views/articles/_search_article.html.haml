@@ -5,7 +5,7 @@
         = image_tag "", class: 'search__article__left__userlink__image'
     .search__article__main
       %h1.search__article__main__title
-        = link_to "/" do
+        = link_to article_path(article) do
           = article.title
-        = link_to root_path, class: 'article__item__body__meta' do
+        = link_to user_path(article.user), class: 'article__item__body__meta' do
           = article.user.nickname

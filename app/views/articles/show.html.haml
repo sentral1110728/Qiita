@@ -5,7 +5,7 @@
       .article
         .article__header
           .article__header__info
-            = link_to class: 'article__header__info__name' do
+            = link_to user_path(@article.user), class: 'article__header__info__name' do
               = @article.user.nickname
             .article__header__info__time
               = @article.created_at

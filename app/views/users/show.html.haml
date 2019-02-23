@@ -69,8 +69,8 @@
                 = image_tag ""
               .article__body
                 .article__body__username
-                  = link_to root_path do
+                  = link_to user_path(article.user) do
                     = article.user.nickname
                 .article__body__title
-                  = link_to root_path do
+                  = link_to article_path(article) do
                     = article.title
