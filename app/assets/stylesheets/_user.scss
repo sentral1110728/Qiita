@@ -136,5 +136,17 @@
         font-size: 13px;
       }
     }
+    &__info__body {
+      padding: 0 0 6px;
+      font-size: 13px;
+      .user__profile__info__heading {
+        font-weight: 700;
+        margin-bottom: 10px;
+        .user__profile__count {
+          float: right;
+          padding: 0 5px;
+        }
+      }
+    }
   }
 }
