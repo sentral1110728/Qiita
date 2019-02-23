@@ -245,6 +245,63 @@
           }
         }
       }
+      .user__local__nav {
+        margin-top: 80px;
+        .nav__tabs {
+          border-bottom: 1px solid #ddd;
+          margin-bottom: 0;
+          padding-left: 0;
+          list-style: none;
+          display: flex;
+          width: 93%;
+          .active {
+            float: left;
+            margin-bottom: -1px;
+            position: relative;
+            display: block;
+            a {
+              color: #555;
+              background-color: #fff;
+              border: 1px solid #ddd;
+              border-bottom-color: transparent;
+              margin-right: 2px;
+              line-height: 1.4;
+              border-radius: 3px 3px 0 0;
+              position: relative;
+              display: block;
+              padding: 10px 15px;
+              span {
+                background-color: #5bc0de;
+                display: inline;
+                padding: .2em .6em .3em;
+                font-size: 75%;
+                font-weight: 700;
+                line-height: 1;
+                color: #fff;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: baseline;
+                border-radius: .25em;
+              }
+            }
+          }
+          li {
+            float: left;
+            margin-bottom: -1px;
+            position: relative;
+            display: block;
+            a {
+              margin-right: 2px;
+              line-height: 1.4;
+              border: 1px solid transparent;
+              border-radius: 3px 3px 0 0;
+              position: relative;
+              display: block;
+              padding: 10px 15px;
+            }
+          }
+        }
+      }
     }
   }
 }
