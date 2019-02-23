@@ -1,0 +1,73 @@
+.allWrapper
+  = render 'shared/header'
+  .main__container
+    .user__profile
+      .user__profile__avatar
+        = image_tag "", class: 'user__profile__avatar__image'
+      .user__profile__header
+        %h3.user__profile__header__fullname
+          = "岡村 優"
+        %h4.user__profile__header__name
+          = "@sentral"
+      .user__profile__info
+        .user__profile__info__body__text
+          = "駆け出しプログラマーです！まだアウトプットに慣れていないので変な記事も投稿してしまうかもしれませんが、もしお時間があれば見ていってください。またご指摘等もして頂けると嬉しいです。"
+        .user__profile__info__body
+          %i.fa.fa-building-o
+          = "無所属"
+        .user__profile__info__body
+          %i.fa.fa-map-marker
+          = "tokyo"
+        %a.user__profile__info__body__edit
+          %i.fa.fa-cog
+          = "プロフィールを編集する"
+      .user__profile__info
+        .user__profile__info__heading
+          = "フォロー中のタグ"
+          %span.user__profile__count
+            = link_to 1
+        .user__profile__info__body
+    .user__article
+      .user__article__activity
+        .user__article__activity__chart
+        .user__article__activity__start
+          %a.item
+            %span.item__count
+              = 0
+            %span.item__label
+              = "Items"
+          %a.contribution
+            %span.contribution__count
+              = 0
+            %span.contribution__label
+              = "Contribution"
+          %a.followers
+            %span.followers__count
+              = 0
+            %span.followers__label
+              = "Followers"
+        .user__local__nav
+          %ul.nav__tabs
+            %li.active
+              %a.active__link
+                = "最近の記事"
+                %span.label__info
+                  = 0
+            %li.presentation
+              %a.tab__link
+                = "いいねした記事"
+            %li.presentation
+              %a.tab__link
+                = "限定共有記事"
+            %li.presentation
+              %a.tab__link
+                = "コメント"
+        .articles
+          %article.article
+            %a.article__image
+              = image_tag ""
+            .article__body
+              .article__body__username
+                %a suguru
+              .article__body__title
+                %a タイトル
