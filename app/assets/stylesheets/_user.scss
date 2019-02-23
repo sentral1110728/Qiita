@@ -99,5 +99,13 @@
         height: 100%;
       }
     }
+    &__header {
+      margin-bottom: 16px;
+      &__fullname {
+        margin: 0 0 3px;
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
   }
 }
