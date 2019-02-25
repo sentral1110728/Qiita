@@ -6,7 +6,7 @@
         = image_tag "", class: 'user__profile__avatar__image'
       .user__profile__header
         %h3.user__profile__header__fullname
-          = "岡村 優"
+          = @user.nickname
         %h4.user__profile__header__name
           = "@sentral"
       .user__profile__info
@@ -33,7 +33,7 @@
         .user__article__activity__start
           %a.item
             %span.item__count
-              = 0
+              = @articles.length
             %span.item__label
               = "Items"
           %a.contribution
@@ -52,7 +52,7 @@
               %a.active__link
                 = "最近の記事"
                 %span.label__info
-                  = 0
+                  = @articles.length
             %li.presentation
               %a.tab__link
                 = "いいねした記事"
@@ -63,11 +63,14 @@
               %a.tab__link
                 = "コメント"
         .articles
-          %article.article
-            %a.article__image
-              = image_tag ""
-            .article__body
-              .article__body__username
-                %a suguru
-              .article__body__title
-                %a タイトル
+          - @articles.each do |article|
+            %article.article
+              %a.article__image
+                = image_tag ""
+              .article__body
+                .article__body__username
+                  = link_to user_path(article.user) do
+                    = article.user.nickname
+                .article__body__title
+                  = link_to article_path(article) do
+                    = article.title
