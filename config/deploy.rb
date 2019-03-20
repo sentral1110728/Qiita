@@ -21,7 +21,7 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
-
+set :linked_files, %w{config/master.key}
 set :default_env, {
   rbenv_root: "/usr/local/rbenv",
   path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH",
