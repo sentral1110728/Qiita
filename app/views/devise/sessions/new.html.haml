@@ -10,6 +10,6 @@
           .form__group
             = f.password_field :password, placeholder: 'パスワード', autocomplete: "current-password",class: 'form__control'
             .help__block
-              = link_to "パスワードを忘れた場合", root_path, method: :get, class: 'help__link'
+              = link_to "パスワードを忘れた場合", new_user_registration_path, method: :get, class: 'help__link'
           .form__group
             = f.submit "Qiitaにログイン", class: 'btn'
